@@ -1,0 +1,167 @@
+body {
+    background:rgb(35, 35, 35);
+    color:white;
+    font-size:1.5em;
+    overflow-x:hidden;
+    display:flex;
+    font-family:Times New Roman;
+}
+
+.footer-text {
+    font-size:0.8em;
+}
+
+#main-input {
+    width:70%;
+    margin:auto;
+    font-family:Times New Roman;
+}
+
+#maintenance {
+    display:none;
+}
+
+.pointer {
+    cursor:pointer;
+}
+
+a, a:visited, a:hover {
+    font-weight:thin;
+    color:orange;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+.btns, #main-input {
+    font-size:1em;
+    border-radius:25px;
+    padding:1%;
+    background:rgb(35, 35, 35);
+    color:white;
+    border: solid 5px white;
+    margin-bottom:0.5%;
+    margin-top:0.5%;
+}
+
+.btns:hover, .btns:active {
+    cursor:pointer;
+    color:aqua;
+}
+
+#container {
+    margin:0;
+    height:83vh;
+    width:100%;
+    flex-direction:column;
+    flex:1;
+    z-index:1;
+    display:none;
+}
+
+#chat-box {
+    margin-top:6vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    height:70%;
+    overflow-y:auto;
+    flex-direction:column;
+    flex:1;
+    color: #09ff00;
+}
+
+.user-text {
+    color: #00d5ff;
+}
+
+#input-box {
+    padding: 1%;
+    height:18%;
+}
+
+.center {
+    text-align:center;
+}
+
+.close-button {
+    font-size:1em;
+    border-radius:25px;
+    padding:1%;
+    background:black;
+    color:white;
+}
+
+.close-button:hover {
+    font-size:1em;
+    border-radius:25px;
+    padding:1%;
+    background:white;
+    color:black;
+    border:black 5px solid;
+    cursor:pointer;
+}
+
+.close-button:active {
+    font-size:1em;
+    border-radius:25px;
+    padding:1%;
+    background:white;
+    color:black;
+    border:black 5px solid;
+    cursor:pointer;
+}
+
+#fixed-menu-button {
+    position:fixed;
+    top:1.5%;
+    left:1.5%;
+    font-size:2rem;
+    color:white;
+}
+
+#menu {
+    overflow-y: scroll;
+    font-size:2rem;
+    margin:0;
+    position:fixed;
+    top:-100vh;
+    left:0;
+    width:100%;
+    height:80vh;
+    background:white;
+    color:black;
+    z-index:10;
+    transition:0.5s ease-out;
+}
+
+#menu-close-button {
+    margin-left:1%;
+}
+
+#menu-content {
+    padding: 0px 4% 4% 4%;
+    font-size:1.5rem;
+}
+
+@media (max-width: 768px) {
+    #chat-box {
+        margin-top:8vh;
+    }
+    #fixed-menu-button {
+        top:0%;
+        left:3%;
+    }
+    #menu-content {
+        font-size:1rem;
+    }
+    .btns, #main-input {
+        padding:1.5%;
+        margin-bottom:3%;
+    }
+	 #container { 
+	    height:75vh;
+	 }
+     #footer-desktop {
+        display:none;
+     }
+}
